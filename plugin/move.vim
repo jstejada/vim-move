@@ -15,7 +15,7 @@ if !exists('g:move_map_keys')
 endif
 
 if !exists('g:move_key_modifier')
-    let g:move_key_modifier = 'A'
+    let g:move_key_modifier = 'C'
 endif
 
 if !exists('g:move_auto_indent')
@@ -154,8 +154,8 @@ nnoremap <silent> <Plug>MoveLineHalfPageUp      :call <SID>MoveLineHalfPageUp()<
 
 
 if g:move_map_keys
-    execute 'vmap' s:MoveKey('j') '<Plug>MoveBlockDown'
-    execute 'vmap' s:MoveKey('k') '<Plug>MoveBlockUp'
-    execute 'nmap' s:MoveKey('j') '<Plug>MoveLineDown'
-    execute 'nmap' s:MoveKey('k') '<Plug>MoveLineUp'
+    execute 'vmap' s:MoveKey('Down') '<Plug>MoveBlockDown'
+    execute 'vmap' s:MoveKey('Up') '<Plug>MoveBlockUp'
+    execute 'nmap' s:MoveKey('Down') '<Plug>MoveLineDown'
+    execute 'nmap' s:MoveKey('Up') '<Plug>MoveLineUp'
 endif
